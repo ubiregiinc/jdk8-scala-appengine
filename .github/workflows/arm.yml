@@ -1,4 +1,4 @@
-name: Create and publish a Docker image
+name: (ARM64) Create and publish a Docker image
 
 on:
   push:
@@ -42,7 +42,7 @@ jobs:
         with:
           context: .
           push: true
-          platforms: linux/arm64,linux/amd64
+          platforms: linux/arm64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
