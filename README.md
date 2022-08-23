@@ -6,3 +6,5 @@ included below
 - sbt
 - ruby-sass
 - google-cloud-sdk
+
+built with docker-buildx for AMD64/ARM64.
