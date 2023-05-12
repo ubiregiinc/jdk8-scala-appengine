@@ -7,4 +7,4 @@ RUN apt update && apt install -y sbt
 RUN apt update && apt install -y ruby-sass && gem install foreman
 RUN curl -sSL https://sdk.cloud.google.com | bash
 ENV PATH=$PATH:/root/google-cloud-sdk/bin
-RUN gcloud components install app-engine-java
+RUN gcloud components install app-engine-java beta cloud-datastore-emulator
