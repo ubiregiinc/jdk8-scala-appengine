@@ -3,7 +3,7 @@ included below
 
 - JDK ver.8
 - maven ver.3
-- sbt
+- scala
 - ruby-sass
 - google-cloud-sdk
 
