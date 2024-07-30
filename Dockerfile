@@ -1,4 +1,4 @@
-FROM maven:3-jdk-11
+FROM maven:3-amazoncorretto-17-debian
 
 ENV PATH=$PATH:/root/google-cloud-sdk/bin
 
@@ -6,8 +6,10 @@ RUN set -eux; \
         apt-get update -qq; \
         apt-get install -yq \
             apt-transport-https \
+            curl \
             unzip \
             bc \
+            python3 \
             scala \
             ruby-sass; \
         gem install foreman; \
